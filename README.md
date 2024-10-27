@@ -52,6 +52,7 @@ It shows the distance of a random variable from its mean. It is calcualted as
  Name : Preethi S
  
  Register number: 212223230157
+ 
 ```
 import numpy as np
 L=[int(i) for i in input().split()]
