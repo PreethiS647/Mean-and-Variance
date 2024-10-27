@@ -1,6 +1,6 @@
 #  Mean and variance of a discrete  distribution
 
-
+# Date:
 # Aim : 
 
 To find mean and variance of arrival of objects from the feeder using probability distribution
@@ -49,9 +49,36 @@ It shows the distance of a random variable from its mean. It is calcualted as
 
 # Program :
 
-
+# Name : Preethi S
+# Register number: 212223230157
+```
+import numpy as np
+L=[int(i) for i in input().split()]
+N=len(L); M=max(L)
+x=list();f=list()
+for i in range (M+1):
+    c = 0
+    for j in range(N):
+       if L[j]==1:
+           c=c+1
+    f.append(c)
+    x.append(i)
+sf=np.sum(f)
+p=list()
+for i in range(M+1):
+    p.append(f[i]/sf)
+mean=np.inner(x,p)
+EX2=np.inner(np.square(x),p)
+var=EX2-mean**2
+SD=np.sqrt(var)
+print("The Mean arrival rate is %.3f "%mean)
+print("The Variance of arrival from feeder is %.3f "%var)
+print("The Standard deviation of arrival from feeder is %.3F "%SD)
+```
 
 # Output : 
+
+![image](https://github.com/user-attachments/assets/3318ad89-afce-4259-8a4e-03c32d484f1d)
 
 # Results :
 The mean and variance of arrivals of objects from feeder using probability distribution are calculated.
